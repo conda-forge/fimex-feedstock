@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
 {% set testdata_version = "20200717T0717" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: f38e6ceda83d65c4a2cb8574d020b71179ae00fec385147ad8eed61b9cc0723e
+    sha256: 98bd39b3ad82da6161fe51b8cd4fa8cb3dc1031a975a7f28aeede342a3c3b550
     folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: 97a6db95ad74140daaa7742c13843dd801b1b9bc269bfda2cfac1901287b8493
@@ -65,7 +65,7 @@ about:
   home: https://wiki.met.no/fimex/start
   license: LGPL-2.1-or-later
   license_file: source/lgpl.txt
-  summary: 'MET Norway File Interpolation, Manipulation and EXtraction library'
+  summary: MET Norway File Interpolation, Manipulation and EXtraction library
   dev_url: https://github.com/metno/fimex
 
 extra:
