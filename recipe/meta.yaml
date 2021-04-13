@@ -51,6 +51,9 @@ requirements:
     - proj
     - udunits2
     - mi-programoptions
+  run_constrained:
+    - python
+    - {{ pin_compatible('numpy') }}
 
 test:
   commands:
