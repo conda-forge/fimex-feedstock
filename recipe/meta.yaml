@@ -30,8 +30,8 @@ requirements:
     - pkg-config
   host:
     - python
-    - numpy x.x
     - pybind11 >=2.2
+    - numpy
     - howardhinnant_date >=2.4.1
     - mi-cpptest
     - eccodes
@@ -42,8 +42,6 @@ requirements:
     - udunits2
     - mi-programoptions
   run:
-    - python
-    - {{ pin_compatible('numpy') }}
     - _openmp_mutex
     - eccodes
     - libnetcdf
