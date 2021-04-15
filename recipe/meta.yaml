@@ -32,6 +32,7 @@ requirements:
     - python
     - numpy x.x
     - pybind11 >=2.2
+    - pybind11-abi
     - howardhinnant_date >=2.4.1
     - mi-cpptest
     - eccodes
