@@ -38,7 +38,7 @@ requirements:
     - libnetcdf
     - log4cpp
     - libxml2
-    - proj <8.0
+    - proj
     - udunits2
     - mi-programoptions
   run:
