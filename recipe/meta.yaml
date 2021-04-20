@@ -40,6 +40,7 @@ requirements:
     - log4cpp
     - libxml2
     - proj
+    - proj <8.0
     - udunits2
     - mi-programoptions
   run:
