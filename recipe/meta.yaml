@@ -1,4 +1,4 @@
-{% set version = "1.6.3" %}
+{% set version = "1.6.4" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
 {% set testdata_version = "20200717T0717" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: 8ad3c4f24faaad552d2c59ca384a40afb32bacef86a47072314a7a90070b0a2d
+    sha256: 44cc8653418d797c20d91c9ed9157e52963ac55911fa850d2d43e1b10941bd80
     folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: 97a6db95ad74140daaa7742c13843dd801b1b9bc269bfda2cfac1901287b8493
@@ -40,6 +40,7 @@ requirements:
     - log4cpp
     - libxml2
     - proj
+    - proj <8.0
     - udunits2
     - mi-programoptions
   run:
