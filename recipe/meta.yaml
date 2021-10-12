@@ -67,7 +67,7 @@ about:
   home: https://wiki.met.no/fimex/start
   license: LGPL-2.1-or-later
   license_file: source/lgpl.txt
-  summary: 'MET Norway File Interpolation, Manipulation and EXtraction library'
+  summary: MET Norway File Interpolation, Manipulation and EXtraction library
   dev_url: https://github.com/metno/fimex
 
 extra:
