@@ -15,7 +15,7 @@ fortran_compiler:
 fortran_compiler_version:
 - '9'
 libnetcdf:
-- 4.8.1
+- 4.8.0
 libxml2:
 - '2.9'
 numpy:
