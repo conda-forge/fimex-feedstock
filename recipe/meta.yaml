@@ -15,7 +15,7 @@ source:
     folder: testdata
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
@@ -39,7 +39,6 @@ requirements:
     - libnetcdf
     - log4cpp
     - libxml2
-    - proj
     - proj <8.0
     - udunits2
     - mi-programoptions
@@ -51,7 +50,7 @@ requirements:
     - libnetcdf
     - log4cpp
     - libxml2
-    - proj
+    - proj <8.0
     - udunits2
     - mi-programoptions
 
