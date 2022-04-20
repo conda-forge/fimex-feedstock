@@ -19,17 +19,19 @@ libnetcdf:
 libxml2:
 - '2.9'
 numpy:
-- '1.18'
+- '1.19'
 pin_run_as_build:
   libxml2:
     max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
+proj:
+- 9.0.0
 pybind11_abi:
 - '4'
 python:
-- 3.7.* *_cpython
+- 3.8.* *_cpython
 target_platform:
 - linux-64
 zip_keys:
