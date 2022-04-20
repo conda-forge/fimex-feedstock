@@ -9,6 +9,7 @@ package:
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
     sha256: 29564f14820bb32f08753a845d4c8440ad7f218b699b114d569e8a95fa675cea
+    folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
     folder: testdata
