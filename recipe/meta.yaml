@@ -8,14 +8,14 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: 1c48da8320af9fcb6e3acb9fda79393d14a2d0b7808f6690cea386c136806a7a
+    sha256: 044a48a18981521b1558188b01eb3328689006901fe35aec8cdb85c5edc5aa4e
     folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
     folder: testdata
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
