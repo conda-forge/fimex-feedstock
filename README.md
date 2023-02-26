@@ -1,11 +1,11 @@
-About fimex
-===========
+About fimex-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fimex-feedstock/blob/main/LICENSE.txt)
 
 Home: https://wiki.met.no/fimex/start
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fimex-feedstock/blob/main/LICENSE.txt)
 
 Summary: MET Norway File Interpolation, Manipulation and EXtraction library
 
