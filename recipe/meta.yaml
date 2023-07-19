@@ -42,6 +42,7 @@ requirements:
     - proj
     - udunits2
     - mi-programoptions
+    - zlib
   run:
     - python
     - {{ pin_compatible('numpy') }}
