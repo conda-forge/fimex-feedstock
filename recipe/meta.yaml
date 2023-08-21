@@ -45,6 +45,9 @@ requirements:
     # libnetcdf requires zlib when used via cmake while waiting for
     # https://github.com/conda-forge/libnetcdf-feedstock/pull/184
     - zlib
+    # pypy builds seem to fail if libnsl is not listed here
+    # cpython builds seem to install libnsl as dependency of some other package
+    - libnsl
   run:
     - python
     - {{ pin_compatible('numpy') }}
