@@ -42,6 +42,9 @@ requirements:
     - proj
     - udunits2
     - mi-programoptions
+    # libnetcdf requires zlib when used via cmake while waiting for
+    # https://github.com/conda-forge/libnetcdf-feedstock/pull/184
+    - zlib
   run:
     - python
     - {{ pin_compatible('numpy') }}
