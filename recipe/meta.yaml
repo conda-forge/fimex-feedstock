@@ -1,4 +1,4 @@
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
 {% set testdata_version = "20220211T1614" %}
 
@@ -8,14 +8,14 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: c3edf18f9363414620f4c7bcf600984a5a13d1503f6cd55dac530c22d25a39d1
+    sha256: d75cd579b6b762acbce256a726c5db57e32dd67c0c0e2002dfc797fb0f57b8c1
     folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
     folder: testdata
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux]
 
 requirements:
@@ -42,6 +42,12 @@ requirements:
     - proj
     - udunits2
     - mi-programoptions
+    # libnetcdf requires zlib when used via cmake while waiting for
+    # https://github.com/conda-forge/libnetcdf-feedstock/pull/184
+    - zlib
+    # pypy builds seem to fail if libnsl is not listed here
+    # cpython builds seem to install libnsl as dependency of some other package
+    - libnsl
   run:
     - python
     - {{ pin_compatible('numpy') }}
