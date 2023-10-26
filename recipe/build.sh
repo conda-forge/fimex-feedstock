@@ -25,7 +25,7 @@ cmake -H"$SRC_DIR/source" -B"$BLD" \
     -Dmi-programoptions_DIR="$PREFIX/lib/cmake/mi-programoptions" \
     -Dpybind11_DIR="$PREFIX/share/cmake/pybind11" \
     -DTEST_EXTRADATA_DIR="$SRC_DIR/testdata" \
-    -DPYTHON_EXECUTABLE="$PYTHON" \
+    -DPython_EXECUTABLE="$PYTHON" \
     -DENABLE_FIMEX_VERSIONNUMBERED=NO \
     -DENABLE_ECCODES=YES \
     -DENABLE_LOG4CPP=YES \
