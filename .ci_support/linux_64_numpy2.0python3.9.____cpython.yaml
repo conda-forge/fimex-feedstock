@@ -29,7 +29,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 proj:
-- 9.4.0
+- '9.4'
 pybind11_abi:
 - '4'
 python:
@@ -44,4 +44,4 @@ zip_keys:
 - - python
   - numpy
 zlib:
-- '1.2'
+- '1'
