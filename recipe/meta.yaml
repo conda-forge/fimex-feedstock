@@ -15,13 +15,14 @@ source:
     folder: testdata
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - libgomp      # [linux]
     - llvm-openmp  # [osx]
     - cmake >=3.6
@@ -50,7 +51,6 @@ requirements:
     - libnsl
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - _openmp_mutex
     - eccodes
     - libnetcdf
