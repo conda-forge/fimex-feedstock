@@ -39,7 +39,7 @@ requirements:
     - eccodes
     - libnetcdf
     - log4cpp
-    - libxml2
+    - libxml2-devel
     - proj
     - udunits2
     - mi-programoptions
@@ -55,7 +55,7 @@ requirements:
     - eccodes
     - libnetcdf
     - log4cpp
-    - libxml2
+    - libxml2-devel
     - proj
     - udunits2
     - mi-programoptions
