@@ -15,7 +15,7 @@ source:
     folder: testdata
 
 build:
-  number: 4
+  number: 5
   skip: true  # [not linux]
 
 requirements:
