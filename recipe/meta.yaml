@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
 {% set testdata_version = "20220211T1614" %}
 
@@ -8,14 +8,14 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: a38972af7e382cab4d3298af69d82a872fdf20aaedf5f88c58a3f41caff31f69
+    sha256: 48d3146d78f8253badb45c77c82aab83d78f66e96c98c99b8f9b29f26f095d45
     folder: source
   - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
     folder: testdata
 
 build:
-  number: 6
+  number: 0
   skip: true  # [not linux]
 
 requirements:
@@ -30,10 +30,6 @@ requirements:
     - ninja        # [win]
     - pkg-config
   host:
-    - python
-    - numpy
-    - pybind11 >=2.2
-    - pybind11-abi
     - howardhinnant_date >=2.4.1
     - mi-cpptest
     - eccodes
@@ -65,8 +61,6 @@ test:
     - fimex --version
     - test -f $PREFIX/include/fimex/CDMconstants.h  # [unix]
     - test -f $PREFIX/lib/libfimex$SHLIB_EXT  # [unix]
-  imports:
-    - pyfimex0
 
 about:
   home: https://wiki.met.no/fimex/start

@@ -22,16 +22,14 @@ cmake -H"$SRC_DIR/source" -B"$BLD" \
     -Deccodes_DIR="$PREFIX/lib/cmake/eccodes" \
     -Dmi-cpptest_DIR="$PREFIX/lib/cmake/mi-cpptest" \
     -Dmi-programoptions_DIR="$PREFIX/lib/cmake/mi-programoptions" \
-    -Dpybind11_DIR="$PREFIX/share/cmake/pybind11" \
     -DTEST_EXTRADATA_DIR="$SRC_DIR/testdata" \
-    -DPYTHON_EXECUTABLE="$PYTHON" \
     -DENABLE_FIMEX_VERSIONNUMBERED=NO \
     -DENABLE_ECCODES=YES \
     -DENABLE_LOG4CPP=YES \
     -DENABLE_FELT=YES \
     -DENABLE_FORTRAN=YES \
     -DENABLE_FIMEX_OMP=YES \
-    -DENABLE_PYTHON=YES \
+    -DENABLE_PYTHON=NO \
     ${CMAKE_PLATFORM_FLAGS[@]}
 
 cmake --build "$BLD" --target "all"
