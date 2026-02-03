@@ -10,7 +10,7 @@ source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
     sha256: 48d3146d78f8253badb45c77c82aab83d78f66e96c98c99b8f9b29f26f095d45
     folder: source
-  - url: https://wiki.met.no/_media/fimex/fimex-test-data-{{ testdata_version }}.tar.gz
+  - url: https://rgw.met.no/0c541cf629a545769d10585a9ea2043f:unit-test-data/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
     folder: testdata
 
