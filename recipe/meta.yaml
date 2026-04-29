@@ -1,6 +1,6 @@
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
-{% set testdata_version = "20220211T1614" %}
+{% set testdata_version = "20240719T1200" %}
 
 package:
   name: fimex
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: 96e7fc0b7c646181b241252b8b7d98492cbabe0a140bc8b401f2f3bfd1633bdd
+    sha256: 2edc1dd053352113b4c06228e57269e15309cd9bfc249aa1252fe95bc12a7cce
     folder: source
   - url: https://rgw.met.no/0c541cf629a545769d10585a9ea2043f:unit-test-data/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
@@ -34,6 +34,7 @@ requirements:
     - mi-cpptest
     - eccodes
     - libnetcdf
+    - libprotobuf
     - log4cpp
     - libxml2-devel
     - proj
@@ -50,6 +51,7 @@ requirements:
     - _openmp_mutex
     - eccodes
     - libnetcdf
+    - libprotobuf
     - log4cpp
     - libxml2-devel
     - proj
