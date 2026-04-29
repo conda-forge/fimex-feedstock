@@ -11,7 +11,7 @@ source:
     sha256: 2edc1dd053352113b4c06228e57269e15309cd9bfc249aa1252fe95bc12a7cce
     folder: source
   - url: https://rgw.met.no/0c541cf629a545769d10585a9ea2043f:unit-test-data/fimex-test-data-{{ testdata_version }}.tar.gz
-    sha256: ab96bc4dc846fa4959660e56183ca467cf0f75f4dbdb42739f57d3a12afcd41e
+    sha256: a002a2373eddcc34d6da0090b4e84e6fcd30d27202aac4c1c208f8dbeabf93d7
     folder: testdata
 
 build:
