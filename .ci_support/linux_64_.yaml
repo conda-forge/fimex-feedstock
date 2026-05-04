@@ -18,6 +18,8 @@ fortran_compiler_version:
 - '14'
 libnetcdf:
 - 4.10.0
+libprotobuf:
+- 6.31.1
 libxml2_devel:
 - '2.14'
 proj:
