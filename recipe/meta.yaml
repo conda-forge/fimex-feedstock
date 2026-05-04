@@ -1,4 +1,4 @@
-{% set version = "2.4.0" %}
+{% set version = "2.4.1" %}
 # check testdata_version with `grep CURRENT_TEST_EXTRADATA_VERSION test/CMakeLists.txt`
 {% set testdata_version = "20240719T1200" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/metno/fimex/archive/v{{ version }}.tar.gz
-    sha256: 2edc1dd053352113b4c06228e57269e15309cd9bfc249aa1252fe95bc12a7cce
+    sha256: ec97f2f36e7cc5ff2dde43af114ee9f7467c37b03c8fb7f6e667f6e96b028db9
     folder: source
   - url: https://rgw.met.no/0c541cf629a545769d10585a9ea2043f:unit-test-data/fimex-test-data-{{ testdata_version }}.tar.gz
     sha256: a002a2373eddcc34d6da0090b4e84e6fcd30d27202aac4c1c208f8dbeabf93d7
