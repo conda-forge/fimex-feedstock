@@ -21,7 +21,7 @@ hdf5:
 libaec:
 - '1'
 libnetcdf:
-- 4.10.0
+- 4.10.1
 libprotobuf:
 - 7.35.1
 libxml2_devel:
