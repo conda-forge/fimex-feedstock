@@ -9,13 +9,13 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '14'
+- '15'
 docker_image:
-- quay.io/condaforge/linux-anvil-aarch64:alma9
+- quay.io/condaforge/linux-anvil-aarch64:alma10
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '14'
+- '15'
 hdf5:
 - 1.14.6
 libaec:
@@ -25,9 +25,9 @@ libnetcdf:
 libprotobuf:
 - 7.35.1
 libxml2_devel:
-- '2.14'
+- '2.15'
 proj:
-- '9.8'
+- '9.9'
 target_platform:
 - linux-aarch64
 zip_keys:
